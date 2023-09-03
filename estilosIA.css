@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gray-background {
+    background-color: #f0f0f0; /* Gris claro */
+}
+
+.light-gray-background {
+    background-color: #e5e5e5; /* Gris más claro */
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #d0d0d0; /* Gris medio */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Negro */
+    font-weight: bold;
+}
+
+/* Estilos para la sección de información de contacto */
+form {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5; /* Gris más claro */
+    border: 2px solid #000; /* Borde negro */
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección "Acerca de nosotros" */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d0d0d0; /* Gris medio */
+}
+
+/* Estilos para la sección de categorías y resultados */
+#categorias {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btn-interior,
+#btn-exterior {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+/* Estilos para los botones de categoría */
+.boton-categoria {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    background-color: #007acc; /* Color de fondo azul */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-categoria:hover {
+    background-color: #005fa6; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+
+#resultados-interior,
+#resultados-exterior {
+    display: none;
+}
+
+.card {
+    border: 2px solid #000; /* Borde negro */
+    padding: 8px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Tamaño de las cards con espacio entre ellas */
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000, #f0f0f0); /* Degradado desde negro a gris claro */
+}
+
+/* Estilos para mostrar los resultados según la categoría seleccionada */
+:target {
+    display: block !important;
+}
+
+/* Estilos para las cards */
+.card {
+    border: 2px solid #000; /* Borde negro */
+    padding: 8px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Tamaño de las cards con espacio entre ellas */
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000, #f0f0f0); /* Degradado desde negro a gris claro */
+    text-align: center; /* Centra el contenido de la card */
+}
+
+.card h3 {
+    color: #fff; /* Color de texto blanco para el nombre de la planta */
+    background-color: #007acc; /* Color de fondo azul */
+    padding: 5px;
+    margin-top: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Cambia la imagen a "display: block" */
+}
+
+.card a {
+    display: block; /* Cambia "+ info" a "display: block" */
+    margin-top: 10px; /* Espacio entre la imagen y "+ info" */
+    text-decoration: none;
+    color: #007acc; /* Color de texto azul para el enlace */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+/* Estilos para pantallas de hasta 768px de ancho (tablets y teléfonos) */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    .card {
+        width: calc(50% - 20px); /* Dos cards por fila con espacio entre ellas */
+    }
+}
+
+/* Estilos para pantallas de hasta 480px de ancho (teléfonos) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Una card por fila en pantallas pequeñas */
+    }
+}
